@@ -19,7 +19,7 @@
 			</ul>
 			<ul>
 				<li>
-					<button type="button">Вход</button>
+					<a href="login.html">Вход</a>
 				</li>
 			</ul>
 		</nav>
@@ -91,7 +91,25 @@
 		<section>
 			<h2>Записаться</h2>
 			<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<!-- Здесь будет форма -->
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="appointment-date">Дата</label>
+					<input type="date" name="appointment-date" id="appointment-date" value="2017-10-08">
+				</p>
+				<p>
+					<label for="appointment-time">Время</label>
+					<input type="time" name="appointment-time" id="appointment-time" value="10:00">
+				</p>
+				<p>
+					<label for="appointment-name">Ваше имя</label>
+					<input type="text" name="appointment-name" id="appointment-name" value="" placeholder="Борода">
+				</p>
+				<p>
+					<label for="appointment-phone">Ваше имя</label>
+					<input type="text" name="appointment-phone" id="appointment-phone" value="" placeholder="+7 123 456-78-90">
+				</p>
+				<button type="submit">Отправить</button>
+			</form>
 		</section>
 	</main>
 	<footer>
@@ -118,12 +136,30 @@
 	<section>
 		<h2>Личный кабинет</h2>
 		<p>Введите свой логин и пароль.</p>
-		<!-- Здесь будет форма -->
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="user-login">Логин</label>
+				<input type="text" name="user-login" id="user-login" placeholder="Логин">
+			</p>
+			<p>
+				<label for="user-password">Пароль</label>
+				<input type="password" name="user-password" id="user-password" placeholder="Пароль">
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="remember">
+					Запомните меня
+				</label>
+				<a href="#">Я забыл пароль</a>
+			</p>
+			<button type="submit">Войти</button>
+		</form>
 		<button type="button">Закрыть</button>
 	</section>
 
 	<section>
 		<h2>Как до нас добраться</h2>
+		<img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 		<button type="button">Закрыть</button>
 	</section>
   </body>
